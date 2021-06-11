@@ -16,3 +16,7 @@ function deleteElement(elementID) {
       Given the element id, this function will remove the function
     */
 }       
+
+function saveEdits() {
+    
+}

@@ -3,7 +3,9 @@
     <head>
         <title>Interactive Timeline</title>
         <script src="maker.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body onload="onLoadFunction()">
@@ -11,7 +13,9 @@
             <h1 class="topbar-title" id="topbar-title">Timeline Maker</h1>
         </div>
         <div class="main" id="main">
+            <input type="button" onclick="saveEdits()" value="Save" class="saveButton">
             <div class="timeline" id="timeline">
+                <p id="begin-year" class="begin-year" contenteditable="true">1950</p>
                 <div class="timeline-line" id="timeline-line"></div>
                 <div class="timeline-elements" id="timeline-elements"></div>
             </div>
