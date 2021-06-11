@@ -18,5 +18,11 @@ function deleteElement(elementID) {
 }       
 
 function saveEdits() {
+    /*
     
+    */
 }
+
+$(document).ready( function() {
+    $('body').on
+});

@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    position: relative;
 }
 
 .topbar-title {
@@ -31,6 +32,19 @@ body {
     margin-left: 110vh;
     padding-top: 10px;
     margin-bottom: 60px;;
+}
+
+.blurred-white {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-color: rgb(238, 238, 238);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
 }
 
 .topbar {
