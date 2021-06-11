@@ -1,6 +1,5 @@
 function onLoadFunction() {
-    // Here I will load up the data from timeline.json
-    // and create the relevant timeline elements.
+    // Here anything that needs to be done on load is done
 }
 
 function createNewElement(text, time) {
@@ -13,13 +12,7 @@ function takeInput() {
 }
 
 function deleteElement(elementID) {
-    /* Each elemen will be given an id so the json will
-       be stored like this:
-       Element1: {
-       'text': 'blabla',
-       'time': '1946',
-       'id': '1'
-       }
-       and given the element id, this function will 
+    /*
+      Given the element id, this function will remove the function
     */
 }       
