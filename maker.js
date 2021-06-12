@@ -13,9 +13,13 @@ function createNewElement(text, time) {
 function takeInput() {
     // Called when the user had inputted the time
     // and text for the next timeline element
-    $('body').css({'overflow': 'hidden'})
-    $(document).off('scroll')
-    $('#begin')
+    let beginYear = $('#begin').val();
+    let endYear = $('#end').val();
+    $('body').css({'overflow': 'visible'});
+    $('.init-window').hide();
+    $(document).off('scroll');
+    $('.begin-year').text(beginYear);
+    $('.end-year').text(endYear);
 }
 
 function deleteElement(elementID) {
