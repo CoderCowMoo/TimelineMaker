@@ -1,1 +1,1 @@
-A program to create vertical interactive timelines written in Javascript.
+A program to create vertical (possibly in the future interactive) timelines written in Javascript and jQuery. 
