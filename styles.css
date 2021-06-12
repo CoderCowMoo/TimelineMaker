@@ -74,6 +74,15 @@ body {
     padding: 5px;
 }
 
+.add-element {
+    float: right;
+    border-radius: 50%;
+    background-color: rgb(72, 72, 233);
+    margin-right: 70px;
+    padding-right: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+}
 
 .overlay-box {
     width: 50vh;
