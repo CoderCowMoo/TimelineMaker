@@ -1,3 +1,4 @@
+"use strict";
 function onLoadFunction() {
     // Here anything that needs to be done on load is done
     $('body').css({'overflow':'hidden'});
@@ -15,11 +16,29 @@ function takeInput() {
     // and text for the next timeline element
     let beginYear = $('#begin').val();
     let endYear = $('#end').val();
+
+    if (beginYear == '' || endYear == '' ) {
+        alert("Please put in a value");
+    }
+
+    else if (beginYear == endYear) {
+        beginYear += ' Jan';
+        endYear += ' Dec';
+        $('body').css({'overflow': 'visible'});
+        $('.init-window').hide();
+        $(document).off('scroll');
+        $('.begin-year').text(beginYear);
+        $('.end-year').text(endYear);   
+    }
+
+    else {
     $('body').css({'overflow': 'visible'});
     $('.init-window').hide();
     $(document).off('scroll');
     $('.begin-year').text(beginYear);
-    $('.end-year').text(endYear);
+    $('.end-year').text(endYear);   
+    }
+    
 }
 
 function deleteElement(elementID) {
