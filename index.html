@@ -9,8 +9,20 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body onload="onLoadFunction()">
-        <div id="init-window">
-            <div class="blurred-white"></div>
+        <div class="init-window">
+            <div class="overlay"></div>
+            <div class="overlay-box">
+                <div class="overlay-text">
+                    <p>When does this timeline begin and end?</p>
+                    <br>
+                    <input type="number" id="begin" placeholder="Begins...">
+                    <br>
+                    <p>And</p>
+                    <br>
+                    <input type="number" id="end" placeholder="Ends...">
+                    <input type="submit" onclick="takeInput()">
+                </div>
+            </div>
         </div>
         <div class="topbar" id="topbar">
             <h1 class="topbar-title" id="topbar-title">Timeline Maker</h1>
@@ -18,7 +30,7 @@
         <div class="main" id="main">
             <input type="button" onclick="saveEdits()" value="Save" class="saveButton">
             <div class="timeline" id="timeline">
-                <p id="begin-year" class="begin-year" contenteditable="true">1950</p>
+                <p id="begin-year" class="begin-year"></p>
                 <div class="timeline-line" id="timeline-line"></div>
                 <div class="timeline-elements" id="timeline-elements"></div>
             </div>
