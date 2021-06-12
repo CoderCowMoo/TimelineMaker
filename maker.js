@@ -1,5 +1,9 @@
 function onLoadFunction() {
     // Here anything that needs to be done on load is done
+    $('body').css({'overflow':'hidden'});
+    $(document).on('scroll',function () { 
+         window.scrollTo(0,0); 
+    });
 }
 
 function createNewElement(text, time) {
@@ -9,6 +13,9 @@ function createNewElement(text, time) {
 function takeInput() {
     // Called when the user had inputted the time
     // and text for the next timeline element
+    $('body').css({'overflow': 'hidden'})
+    $(document).off('scroll')
+    $('#begin')
 }
 
 function deleteElement(elementID) {
