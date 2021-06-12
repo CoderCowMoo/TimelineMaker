@@ -12,16 +12,14 @@
         <div class="init-window">
             <div class="overlay"></div>
             <div class="overlay-box">
-                <div class="overlay-text">
-                    <p>When does this timeline begin and end?</p>
-                    <br>
+                <div class="overlay-text-container">
+                    <p class="overlay-text">When does this timeline begin and end?</p>
                     <input type="number" id="begin" placeholder="Begins...">
-                    <br>
-                    <p>And</p>
-                    <br>
+                    <p class="overlay-text">And</p>
                     <input type="number" id="end" placeholder="Ends...">
                     <br>
-                    <input type="submit" onclick="takeInput()">
+                    <br>
+                    <input type="submit" onclick="takeInput()" id='submit-times'>
                 </div>
             </div>
         </div>
@@ -29,7 +27,6 @@
             <h1 class="topbar-title" id="topbar-title">Timeline Maker</h1>
         </div>
         <div class="main" id="main">
-            <input type="button" onclick="saveEdits()" value="Save" class="saveButton">
             <div class="timeline" id="timeline">
                 <p class="begin-year"></p>
                 <div class="timeline-line" id="timeline-line"></div>
