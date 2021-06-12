@@ -20,6 +20,7 @@
                     <p>And</p>
                     <br>
                     <input type="number" id="end" placeholder="Ends...">
+                    <br>
                     <input type="submit" onclick="takeInput()">
                 </div>
             </div>
@@ -30,13 +31,11 @@
         <div class="main" id="main">
             <input type="button" onclick="saveEdits()" value="Save" class="saveButton">
             <div class="timeline" id="timeline">
-                <p id="begin-year" class="begin-year"></p>
+                <p class="begin-year"></p>
                 <div class="timeline-line" id="timeline-line"></div>
-                <div class="timeline-elements" id="timeline-elements"></div>
-            </div>
-
-            <div class="new-Element" id="new-Element">
-
+                <div class="timeline-elements" id="timeline-elements">
+                </div>
+                <p class="end-year"></p>
             </div>
         </div>
     </body>
