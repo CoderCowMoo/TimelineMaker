@@ -75,8 +75,10 @@ body {
 }
 
 .add-element {
-    margin-left: 90vh;
-    border-radius: 50px;
+    margin-left: 90px;
+    margin-top: 100px;
+    width: 20px;
+    height: 20px;
     background-color: rgb(72, 72, 233);
     position: sticky;
 }
